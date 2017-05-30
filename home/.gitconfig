@@ -1,0 +1,16 @@
+[user]
+	name = ha4gu
+	email = ha4gu.com@gmail.com
+
+[color]
+	ui = true
+	diff = true
+
+[url "git@github.com:"]
+	pushInsteadOf = https://github.com/
+	pushInsteadOf = git://github.com/
+
+[url "git@bitbucket.org:"]
+	InsteadOf = https://bitbucket.org/
+	InsteadOf = git://bitbucket.org/
+
