@@ -1,0 +1,65 @@
+# ~/.inputrc: readline initialization file.
+
+## Global Settings
+# Allow 8-bit input/output
+set input-meta on
+set output-meta on
+set convert-meta off
+
+## Bash Settings
+$if Bash
+  ## Settings
+  # Use vi-based key bindings rather than emacs-based
+  set editing-mode vi
+
+  # Don't ring bell on completion
+  set bell-style none
+
+  # Don't show control characers like "^C"
+  set echo-control-characters off
+
+  ## Show all instead of beeping first
+  #set show-all-if-ambiguous on
+  #set show-all-if-unmodified on
+
+  # Ignore case while completion
+  set completion-ignore-case on
+
+  # Treat hyphens and underscores as equivalent while completion
+  set completion-map-case on
+
+  # Use different colors to indicate their file types while completion
+  set colored-stats on
+
+  # Expand tilde into the path of home directory while completion
+  set expand-tilde on
+
+  # Prevent moving cursor position on retrieved history lines
+  set history-preserve-point on
+
+  # Append "/" to symbolic-linked directories
+  set mark-symlinked-directories on
+
+  # Prevent inserting duplicative characters while completion in the middle of a word
+  set skip-completed-text on
+
+  # Prevent appending a mark according to the file type in a listing
+  set visible-stats off
+
+  # History expansion with space
+  Space: magic-space
+
+  ## Key bindings
+  # Essentials
+  Control-l: clear-screen
+  Control-n: history-search-forward
+  Control-p: history-search-backward
+  Control-i: complete
+
+  # Common to Console & RXVT
+  "\C-?": backward-kill-line         # Ctrl-BackSpace
+  "\e[2~": paste-from-clipboard      # "Ins. Key"
+  "\e[5~": beginning-of-history      # Page up
+  "\e[6~": end-of-history            # Page down
+$endif
+
