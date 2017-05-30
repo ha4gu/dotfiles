@@ -2,9 +2,6 @@
 set encoding=utf-8
 scriptencoding utf-8
 
-" vi互換
-" set nocompatible		" 明示的に指定する意味はなく、逆にデメリットしかない
-
 " 文字コード設定
 set fileencoding=utf-8							" ファイル保存時の文字コード
 set fileencodings=ucs-boms,utf-8,cp932,euc-jp	" ファイル読込時の文字コード
@@ -13,9 +10,11 @@ set ambiwidth=double							" 記号等の文字幅調整
 
 " タブ・インデント
 set noexpandtab		" タブ文字を入力した際に半角スペース展開させない
-set tabstop=4		" タブ文字を表示する際の文字幅
-set autoindent		" 改行時の単純なインデント
-set smartindent		" 改行時の構文を踏まえてのインデント
+set smarttab		" 行頭でのタブ文字幅を規定するshiftwidthを有効化
+set shiftwidth=4	" 行頭でのタブ文字を表示する際の文字幅
+set tabstop=4		" 行頭以外でのタブ文字を表示する際の文字幅
+set autoindent		" 改行時に前の行のインデントを継続する
+set smartindent		" 改行時に前の行の構文を踏まえてインデントを増減する
 
 " 検索
 set incsearch	" インクリメンタルサーチ有効
@@ -40,14 +39,6 @@ set history=1000	" コマンド履歴の保存数
 " モードライン
 set modeline        " モードライン有効
 set modelines=5     " モードライン設定を上下端から探す行数
-
-" シンタックス
-syntax enable		" シンタックスハイライト
-syntax on			" シンタックスハイライト
-filetype indent on	" ファイルタイプによるインデントを行う
-filetype plugin on	" ファイルタイプによるプラグインを使う
-set t_Co=256
-colorscheme elflord
 
 " 不可視文字
 " set list  "不可視文字を表示
@@ -80,7 +71,7 @@ if has('mouse')
 endif
 
 " クリップボードからの貼付け時は自動でペーストモードにする
-if &term =~ "xterm"
+if ( &term =~ "xterm" || &term =~ "screen" )
 	let &t_SI .= "\e[?2004h"
 	let &t_EI .= "\e[?2004l"
 	let &pastetoggle = "\e[201~"
@@ -90,4 +81,12 @@ if &term =~ "xterm"
 	endfunction
 	inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
 endif
+
+" シンタックス
+syntax enable		" シンタックスハイライト
+syntax on			" シンタックスハイライト
+filetype indent on	" ファイルタイプによるインデントを行う
+filetype plugin on	" ファイルタイプによるプラグインを使う
+set t_Co=256
+colorscheme elflord
 
