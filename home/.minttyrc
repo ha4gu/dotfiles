@@ -18,6 +18,7 @@ AltFnShortcuts=no
 CtrlShiftShortcuts=yes
 Locale=en_US
 Charset=UTF-8
+AllowSetSelection=true
 
 ForegroundColour=197,200,198
 BackgroundColour=29,31,33
