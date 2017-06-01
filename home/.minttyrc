@@ -1,41 +1,50 @@
-Transparency=medium
-Font=Ricty Diminished Discord
-FontHeight=12
-FontSmoothing=partial
+## Looks
+#ThemeFile=hybrid
+#Transparency=medium
+CursorType=line
+CursorBlinks=yes
+
+## Text
+#Font=Migu 2M
+#FontHeight=12
 BoldAsFont=no
 BoldAsColour=yes
+AllowBlinking=no
+#FontSmoothing=full
+#FontRender=uniscribe
+#Locale=en_US
+#Charset=UTF-8
+
+## Keys
 ClipShortcuts=no
 WindowShortcuts=no
-ZoomShortcuts=no
 SwitchShortcuts=no
-ComposeKey=off
-CopyAsRTF=no
-MiddleClickAction=void
-Term=xterm-256color
-Columns=140
-Rows=40
+ZoomShortcuts=no
 AltFnShortcuts=no
 CtrlShiftShortcuts=yes
-Locale=en_US
-Charset=UTF-8
+ComposeKey=off
+
+## Mouse
+CopyOnSelect=yes
+CopyAsRTF=no
+ClicksPlaceCursor=no
+MiddleClickAction=void
+RightClickAction=menu
+ClicksTargetApp=yes
+ClickTargetMod=alt
+
+## Window
+#Columns=140
+#Rows=40
+ScrollbackLines=20000
+Scrollbar=right
+ScrollMod=off
+
+## Terminal
+Term=xterm-256color
 AllowSetSelection=true
 
-ForegroundColour=197,200,198
-BackgroundColour=29,31,33
-Black=40,42,46
-BoldBlack=55,59,65
-Red=165,66,66
-BoldRed=204,102,102
-Green=140,148,64
-BoldGreen=181,189,104
-Yellow=222,147,95
-BoldYellow=240,198,116
-Blue=95,129,157
-BoldBlue=129,162,190
-Magenta=133,103,143
-BoldMagenta=178,148,187
-Cyan=94,141,135
-BoldCyan=138,190,183
-White=112,120,128
-BoldWhite=197,200,198
+## Hidden settings
+#IMECursorColour=#FF0000
+ZoomMouse=yes
 
