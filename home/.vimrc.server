@@ -87,6 +87,15 @@ syntax enable		" シンタックスハイライト
 syntax on			" シンタックスハイライト
 filetype indent on	" ファイルタイプによるインデントを行う
 filetype plugin on	" ファイルタイプによるプラグインを使う
+
+
+let s:hybrid_file = expand('~/.vim/colors/hybrid.vim')
+if !filereadable(s:hybrid_file)
+	silent execute '!curl https://raw.githubusercontent.com/w0ng/vim-hybrid/master/colors/hybrid.vim --create-dirs -o' s:hybrid_file
+endif
+
 set t_Co=256
-colorscheme elflord
+set background=dark
+let g:hybrid_custom_term_colors = 1
+colorscheme hybrid
 
