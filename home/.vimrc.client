@@ -85,14 +85,21 @@ endif
 
 "dein Scripts-----------------------------
 if &compatible
-	set nocompatible               " Be iMproved
+	set nocompatible
 endif
-set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+let s:dein_dir = expand('~/.cache/dein/repos/github.com/Shougo/dein.vim')
+execute 'set runtimepath+=' . s:dein_dir
+
+" Clone dein.vim from github if it's not installed yet.
+if !isdirectory(s:dein_dir)
+	silent execute '!git clone https://github.com/Shougo/dein.vim' s:dein_dir
+endif
+
 if dein#load_state('~/.cache/dein')
 	call dein#begin('~/.cache/dein')
 
 	" Plugins
-	call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
+	call dein#add(s:dein_dir)
 	call dein#add('w0ng/vim-hybrid')
 
 
@@ -104,7 +111,7 @@ syntax enable		" シンタックスハイライト
 filetype indent on	" ファイルタイプによるインデントを行う
 filetype plugin on	" ファイルタイプによるプラグインを使う
 
-" If you want to install not installed plugins on startup.
+" Install not installed plugins on startup.
 if dein#check_install()
 	call dein#install()
 endif
