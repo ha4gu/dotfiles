@@ -32,7 +32,7 @@ $if Bash
   set colored-stats on
 
   # Expand tilde into the path of home directory while completion
-  set expand-tilde on
+  #set expand-tilde on
 
   # Prevent moving cursor position on retrieved history lines
   set history-preserve-point on
@@ -50,16 +50,11 @@ $if Bash
   Space: magic-space
 
   ## Key bindings
-  # Essentials
   Control-l: clear-screen
   Control-n: history-search-forward
   Control-p: history-search-backward
   Control-i: complete
+  Control-?: backward-kill-line         # Ctrl-BackSpace
 
-  # Common to Console & RXVT
-  "\C-?": backward-kill-line         # Ctrl-BackSpace
-  "\e[2~": paste-from-clipboard      # "Ins. Key"
-  "\e[5~": beginning-of-history      # Page up
-  "\e[6~": end-of-history            # Page down
 $endif
 
