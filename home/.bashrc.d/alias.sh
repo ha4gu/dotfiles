@@ -23,6 +23,7 @@ alias la='ls -A'                              # all but . and ..
 alias l='ls -CF'                              #
 alias view="vim -R"
 alias j="jobs -l"
+alias gh="cd ~/"                              # gh = Go Home
 
 # Some shortcuts for different directory listings
 case "${OSTYPE}" in
