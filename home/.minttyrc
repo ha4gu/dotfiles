@@ -1,19 +1,11 @@
 ## Looks
-#ThemeFile=hybrid
-#Transparency=medium
 CursorType=line
 CursorBlinks=yes
 
 ## Text
-#Font=Migu 2M
-#FontHeight=12
 BoldAsFont=no
 BoldAsColour=yes
 AllowBlinking=no
-#FontSmoothing=full
-#FontRender=uniscribe
-#Locale=en_US
-#Charset=UTF-8
 
 ## Keys
 ClipShortcuts=no
@@ -34,17 +26,13 @@ ClicksTargetApp=yes
 ClickTargetMod=alt
 
 ## Window
-#Columns=140
-#Rows=40
 ScrollbackLines=20000
 Scrollbar=right
 ScrollMod=off
 
 ## Terminal
-Term=xterm-256color
 AllowSetSelection=true
 
 ## Hidden settings
-#IMECursorColour=#FF0000
 ZoomMouse=yes
 
