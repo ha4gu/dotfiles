@@ -13,6 +13,7 @@ fi
 
 # I prefer Vim style rather than Emacs style
 export EDITOR=vim
+export SYSTEMD_EDITOR=vim
 set -o vi
 
 # Mail directory setting
