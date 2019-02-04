@@ -11,6 +11,9 @@ elif [ -r /etc/bash_completion ]; then
   . /etc/bash_completion
 fi
 
+# less
+export LESS="-I -R -M -x2"
+
 # homeshick
 [ -r "$HOME/.homesick/repos/homeshick/homeshick.sh" ] \
   && source "$HOME/.homesick/repos/homeshick/homeshick.sh" \
