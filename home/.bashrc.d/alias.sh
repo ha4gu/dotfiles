@@ -5,6 +5,11 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+# git
+alias pull='git pull'
+alias push='git push'
+alias st='git status'
+
 # Ruby on Rails
 alias r='rails'
 alias rs='rails server'
