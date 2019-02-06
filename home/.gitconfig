@@ -6,6 +6,12 @@
 	ui = true
 	diff = true
 
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+
 [url "git@github.com:"]
 	pushInsteadOf = https://github.com/
 	pushInsteadOf = git://github.com/

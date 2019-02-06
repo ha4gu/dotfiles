@@ -9,9 +9,9 @@ set fileformats=unix,dos,mac					" ファイル読込時の改行コード
 set ambiwidth=double							" 記号等の文字幅調整
 
 " タブ・インデント
-set noexpandtab		" タブ文字を入力した際に半角スペース展開させない
+set expandtab		" タブ文字を入力した際に半角スペース展開させる
 set smarttab		" 行頭でのタブ文字幅を規定するshiftwidthを有効化
-set shiftwidth=4	" 行頭でのタブ文字を表示する際の文字幅
+set shiftwidth=2	" 行頭でのタブ文字を表示する際の文字幅
 set tabstop=4		" 行頭以外でのタブ文字を表示する際の文字幅
 set autoindent		" 改行時に前の行のインデントを継続する
 set smartindent		" 改行時に前の行の構文を踏まえてインデントを増減する
@@ -60,51 +60,51 @@ nnoremap Y y$
 
 " マウス有効化
 if has('mouse')
-	set mouse=a
-	if has('mouse_sgr')
-		set ttymouse=sgr
-	elseif v:version > 703 || v:version is 703 && has('patch632')
-		set ttymouse=sgr
-	else
-		set ttymouse=xterm2
-	endif
+  set mouse=a
+  if has('mouse_sgr')
+    set ttymouse=sgr
+  elseif v:version > 703 || v:version is 703 && has('patch632')
+    set ttymouse=sgr
+  else
+    set ttymouse=xterm2
+  endif
 endif
 
 " クリップボードからの貼付け時は自動でペーストモードにする
 if ( &term =~ "xterm" || &term =~ "screen" )
-	let &t_SI .= "\e[?2004h"
-	let &t_EI .= "\e[?2004l"
-	let &pastetoggle = "\e[201~"
-	function XTermPasteBegin(ret)
-		set paste
-		return a:ret
-	endfunction
-	inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
+  let &t_SI .= "\e[?2004h"
+  let &t_EI .= "\e[?2004l"
+  let &pastetoggle = "\e[201~"
+  function XTermPasteBegin(ret)
+    set paste
+    return a:ret
+  endfunction
+  inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
 endif
 
 
 "dein Scripts-----------------------------
 if &compatible
-	set nocompatible
+  set nocompatible
 endif
 let s:dein_dir = expand('~/.cache/dein/repos/github.com/Shougo/dein.vim')
 execute 'set runtimepath+=' . s:dein_dir
 
 " Clone dein.vim from github if it's not installed yet.
 if !isdirectory(s:dein_dir)
-	silent execute '!git clone https://github.com/Shougo/dein.vim' s:dein_dir
+  silent execute '!git clone https://github.com/Shougo/dein.vim' s:dein_dir
 endif
 
 if dein#load_state('~/.cache/dein')
-	call dein#begin('~/.cache/dein')
+  call dein#begin('~/.cache/dein')
 
-	" Plugins
-	call dein#add(s:dein_dir)
-	call dein#add('w0ng/vim-hybrid')
+  " Plugins
+  call dein#add(s:dein_dir)
+  call dein#add('w0ng/vim-hybrid')
 
 
-	call dein#end()
-	call dein#save_state()
+  call dein#end()
+  call dein#save_state()
 endif
 syntax on			" シンタックスハイライト
 syntax enable		" シンタックスハイライト
@@ -113,7 +113,7 @@ filetype plugin on	" ファイルタイプによるプラグインを使う
 
 " Install not installed plugins on startup.
 if dein#check_install()
-	call dein#install()
+ call dein#install()
 endif
 "End dein Scripts-------------------------
 
