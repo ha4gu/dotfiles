@@ -12,6 +12,9 @@
 	co = checkout
 	br = branch
 
+[push]
+	default = simple
+
 [url "git@github.com:"]
 	pushInsteadOf = https://github.com/
 	pushInsteadOf = git://github.com/
