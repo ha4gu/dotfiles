@@ -10,12 +10,14 @@ alias pull='git pull'
 alias push='git push'
 alias st='git status'
 
-# Ruby on Rails
-alias r='rails'
-alias rs='rails server'
-alias rc='rails console'
-alias rg='rails generate'
-alias rr='rails routes'
+# locally installed Ruby on Rails
+alias r='bin/rails'
+alias rs='bin/rails server'
+alias rc='bin/rails console'
+alias rg='bin/rails generate'
+alias rr='bin/rails routes'
+
+# bundle command
 alias be='bundle exec'
 alias bi='bundle install'
 
