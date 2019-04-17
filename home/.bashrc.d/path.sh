@@ -1,4 +1,7 @@
-# add ~/.linuxbrew for LinuxBrew
+# add /usr/local/sbin for Homebrew
+export PATH="/usr/local/sbin:$PATH"
+
+# add ~/.linuxbrew for Linuxbrew
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
