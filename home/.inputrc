@@ -49,6 +49,9 @@ $if Bash
   # History expansion with space
   Space: magic-space
 
+  # Map 'jk' to exit insert mode
+  "jk": vi-movement-mode
+
   ## Key bindings
   Control-l: clear-screen
   Control-n: history-search-forward

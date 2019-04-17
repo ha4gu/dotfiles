@@ -57,6 +57,8 @@ set display=lastline			" 一行の内容が非常に長い場合でも表示
 " Y を行末までのヤンクにする
 nnoremap Y y$
 
+" 'jk'をEscの代わりとして使う
+inoremap jk <Esc>
 
 " マウス有効化
 if has('mouse')
