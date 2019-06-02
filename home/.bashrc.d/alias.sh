@@ -21,8 +21,9 @@ alias rr='bin/rails routes'
 alias be='bundle exec'
 alias bi='bundle install'
 
-# Docker Compose with my env variable
-alias dc='APPNAME=$(basename $(pwd)) docker-compose'
+# Docker Compose
+alias dc='docker-compose'
+alias fig='docker-compose'
 
 # Misc
 alias whence='type -a'                        # where, of a sort
