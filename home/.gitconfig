@@ -23,3 +23,6 @@
 	InsteadOf = https://bitbucket.org/
 	InsteadOf = git://bitbucket.org/
 
+[includeIf "gitdir:~/work/"]
+	path = ~/.gitconfig_work
+
