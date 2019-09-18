@@ -7,10 +7,10 @@
 	diff = true
 
 [alias]
-	st = status
-	ci = commit
-	co = checkout
-	br = branch
+    br = branch
+    co = commit
+    st = status
+    sw = switch
 
 [push]
 	default = simple
@@ -26,3 +26,8 @@
 [includeIf "gitdir:~/work/"]
 	path = ~/.gitconfig_work
 
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
