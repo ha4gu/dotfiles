@@ -9,6 +9,7 @@ alias mv='mv -i'
 alias pull='git pull'
 alias push='git push'
 alias st='git status'
+alias allbranches='git -P branch'
 
 # locally installed Ruby on Rails
 alias r='bin/rails'
@@ -21,9 +22,15 @@ alias rr='bin/rails routes'
 alias be='bundle exec'
 alias bi='bundle install'
 
+# Docker
+alias d='docker'
+
 # Docker Compose
 alias dc='docker-compose'
 alias fig='docker-compose'
+
+# Kubernetes
+alias k='kubectl'
 
 # Misc
 alias whence='type -a'                        # where, of a sort
