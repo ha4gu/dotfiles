@@ -6,8 +6,13 @@ require:
   - rubocop-performance
   - rubocop-rails
   - rubocop-rspec
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/* # copied from the inherited file
+    - config/environments/*.rb
 Metrics/LineLength:
   Exclude:
+    - config/environments/*.rb
     - config/routes.rb
 RSpec/DescribeClass:
   Exclude:
@@ -18,3 +23,5 @@ RSpec/ExampleLength:
 RSpec/MultipleExpectations:
   Exclude:
     - spec/features/**/*
+Layout/DotPosition:
+  EnforcedStyle: leading
