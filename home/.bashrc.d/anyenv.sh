@@ -1,3 +1,18 @@
+# rbenv
+if type rbenv > /dev/null 2>&1; then
+  eval "$(rbenv init -)"
+fi
+
+# nodenv
+if type nodenv > /dev/null 2>&1; then
+  eval "$(nodenv init -)"
+fi
+
+# pyenv
+if type pyenv > /dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
 # anyenv
 if type anyenv > /dev/null 2>&1; then
   eval "$(anyenv init -)"
