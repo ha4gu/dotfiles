@@ -13,6 +13,11 @@ if type pyenv > /dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
+# goenv
+if type goenv > /dev/null 2>&1; then
+  eval "$(goenv init -)"
+fi
+
 # anyenv
 if type anyenv > /dev/null 2>&1; then
   eval "$(anyenv init -)"
