@@ -32,6 +32,9 @@ alias fig='docker-compose'
 # Kubernetes
 alias k='kubectl'
 
+# brew
+alias brewcombo='brew cleanup && brew update && brew upgrade && brew cask upgrade'
+
 # Misc
 alias whence='type -a'                        # where, of a sort
 alias grep='grep --color=always'              # show differences in colour
