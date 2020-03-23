@@ -24,6 +24,7 @@ alias bi='bundle install'
 
 # Docker
 alias d='docker'
+alias dps='docker ps'
 
 # Docker Compose
 alias dc='docker-compose'
