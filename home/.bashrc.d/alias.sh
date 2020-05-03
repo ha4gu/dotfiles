@@ -36,6 +36,9 @@ alias k='kubectl'
 # brew
 alias brewcombo='brew cleanup && brew update && brew upgrade && brew cask upgrade'
 
+# youtube-dl
+alias ydl='youtube-dl -f bestvideo+bestaudio --merge-output-format mp4'
+
 # Misc
 alias whence='type -a'                        # where, of a sort
 alias grep='grep --color=always'              # show differences in colour
