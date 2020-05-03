@@ -1,19 +1,19 @@
-# rbenv
+# rbenv for Ruby
 if type rbenv > /dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
 
-# nodenv
+# nodenv for Node.js
 if type nodenv > /dev/null 2>&1; then
   eval "$(nodenv init -)"
 fi
 
-# pyenv
+# pyenv for Python
 if type pyenv > /dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-# goenv
+# goenv for Go
 if type goenv > /dev/null 2>&1; then
   eval "$(goenv init -)"
 fi
