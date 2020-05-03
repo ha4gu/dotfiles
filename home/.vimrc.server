@@ -25,6 +25,10 @@ set hlsearch	" 検索文字をハイライト表示
 " ESCを二回押すことで検索ハイライトを消す
 nnoremap <silent> <Esc><Esc> :nohlsearch<CR>
 
+" ウインドウ
+set splitbelow      " 新規ウインドウは下に開く
+set splitright      " 新規ウインドウは右に開く
+
 " カーソル移動
 set number			" 行番号表示
 set cursorline		" カーソル行を強調表示
