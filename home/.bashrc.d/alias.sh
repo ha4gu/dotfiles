@@ -37,7 +37,7 @@ alias k='kubectl'
 alias brewcombo='brew cleanup && brew update && brew upgrade && brew cask upgrade'
 
 # youtube-dl
-alias ydl='youtube-dl -f bestvideo+bestaudio --merge-output-format mp4'
+alias ydl='youtube-dl -f bestvideo+bestaudio --merge-output-format mkv'
 
 # Misc
 alias whence='type -a'                        # where, of a sort
