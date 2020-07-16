@@ -1,7 +1,7 @@
 ---
 
 inherit_from:
-  - https://raw.githubusercontent.com/thoughtbot/guides/master/style/ruby/.rubocop.yml
+  - .rubocop-thoughtbot.yml
 require:
   - rubocop-performance
   - rubocop-rails
