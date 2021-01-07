@@ -34,7 +34,7 @@ alias fig='docker-compose'
 alias k='kubectl'
 
 # brew
-alias brewcombo='brew cleanup && brew update && brew upgrade && brew cask upgrade'
+alias brewcombo='brew cleanup && brew update && brew upgrade && brew upgrade --cask'
 
 # youtube-dl
 alias ydl='youtube-dl -f bestvideo+bestaudio --merge-output-format mkv'
