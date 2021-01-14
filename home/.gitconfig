@@ -1,52 +1,51 @@
 [user]
-	name = Yuta HASHIGUCHI
-	email = 9391978+ha4gu@users.noreply.github.com
+    name  = Yuta HASHIGUCHI
+    email = 9391978+ha4gu@users.noreply.github.com
 
 [color]
-	ui = true
-	diff = true
+    ui   = true
+    diff = true
 
 [alias]
     st = status
     sw = switch
 
 [push]
-	default = simple
+    default = simple
 
 [url "git@github.com:"]
-	pushInsteadOf = https://github.com/
-	pushInsteadOf = git://github.com/
+    pushInsteadOf = https://github.com/
+    pushInsteadOf = git://github.com/
 
 [url "git@bitbucket.org:"]
-	InsteadOf = https://bitbucket.org/
-	InsteadOf = git://bitbucket.org/
+    InsteadOf = https://bitbucket.org/
+    InsteadOf = git://bitbucket.org/
 
 [includeIf "gitdir:~/work/"]
-	path = ~/.gitconfig_work
+    path = ~/.gitconfig_work
 
 [includeIf "gitdir:~/src/work/"]
-	path = ~/.gitconfig_work
+    path = ~/.gitconfig_work
 
 [includeIf "gitdir:~/src/work/dockerhub/"]
-	path = ~/.gitconfig_dockerhub
+    path = ~/.gitconfig_dockerhub
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean    = git-lfs clean -- %f
+    smudge   = git-lfs smudge -- %f
+    process  = git-lfs filter-process
+    required = true
 
 [secrets]
-	providers = git secrets --aws-provider
-	patterns = (A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}
-	patterns = (\"|')?(AWS|aws|Aws)?_?(SECRET|secret|Secret)?_?(ACCESS|access|Access)?_?(KEY|key|Key)(\"|')?\\s*(:|=>|=)\\s*(\"|')?[A-Za-z0-9/\\+=]{40}(\"|')?
-	patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
-	allowed = AKIAIOSFODNN7EXAMPLE
-	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+    providers = git secrets --aws-provider
+    patterns = (A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}
+    patterns = (\"|')?(AWS|aws|Aws)?_?(SECRET|secret|Secret)?_?(ACCESS|access|Access)?_?(KEY|key|Key)(\"|')?\\s*(:|=>|=)\\s*(\"|')?[A-Za-z0-9/\\+=]{40}(\"|')?
+    patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
+    allowed = AKIAIOSFODNN7EXAMPLE
+    allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 [init]
-	templateDir = /Users/yuta/.git-templates/git-secrets
+    templateDir = /Users/yuta/.git-templates/git-secrets
 
 [pull]
-	rebase = false
-
+    rebase = false
