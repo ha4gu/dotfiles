@@ -10,8 +10,18 @@
     st = status
     sw = switch
 
+[core]
+    editor = vim
+
+[merge]
+    tool = vimdiff
+    conflictStyle = diff3
+
 [push]
-    default = simple
+    default = current
+
+[pull]
+    rebase = false
 
 [url "git@github.com:"]
     pushInsteadOf = https://github.com/
@@ -21,20 +31,14 @@
     InsteadOf = https://bitbucket.org/
     InsteadOf = git://bitbucket.org/
 
-[includeIf "gitdir:~/work/"]
-    path = ~/.gitconfig_work
-
-[includeIf "gitdir:~/src/work/"]
-    path = ~/.gitconfig_work
-
-[includeIf "gitdir:~/src/work/dockerhub/"]
-    path = ~/.gitconfig_dockerhub
-
 [filter "lfs"]
     clean    = git-lfs clean -- %f
     smudge   = git-lfs smudge -- %f
     process  = git-lfs filter-process
     required = true
+
+[init]
+    templateDir = /Users/yuta/.git-templates/git-secrets
 
 [secrets]
     providers = git secrets --aws-provider
@@ -43,9 +47,3 @@
     patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
     allowed = AKIAIOSFODNN7EXAMPLE
     allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-
-[init]
-    templateDir = /Users/yuta/.git-templates/git-secrets
-
-[pull]
-    rebase = false
