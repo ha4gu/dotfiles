@@ -9,7 +9,7 @@ alias mv='mv -i'
 alias pull='git pull'
 alias push='git push'
 alias st='git status'
-alias allbranches='git -P branch'
+alias allbranches='git -P branch -a'
 
 # locally installed Ruby on Rails
 alias r='bin/rails'
