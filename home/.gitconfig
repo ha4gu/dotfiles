@@ -24,8 +24,8 @@
     rebase = false
 
 [url "git@github.com:"]
-    pushInsteadOf = https://github.com/
-    pushInsteadOf = git://github.com/
+    InsteadOf = https://github.com/
+    InsteadOf = git://github.com/
 
 [url "git@bitbucket.org:"]
     InsteadOf = https://bitbucket.org/
@@ -38,7 +38,7 @@
     required = true
 
 [init]
-    templateDir = /Users/yuta/.git-templates/git-secrets
+    templateDir = ~/.git-templates/git-secrets
 
 [include]
     path = ~/.gitconfig_secrets
