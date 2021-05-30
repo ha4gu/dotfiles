@@ -38,6 +38,7 @@
     required = true
 
 [init]
+    defaultBranch = main
     templateDir = ~/.git-templates/git-secrets
 
 [include]
