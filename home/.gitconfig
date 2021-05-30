@@ -42,3 +42,9 @@
 
 [include]
     path = ~/.gitconfig_secrets
+
+[includeIf "gitdir:~/work/"]
+    path = ~/.gitconfig_work
+
+[includeIf "gitdir:~/src/work/"]
+    path = ~/.gitconfig_work
