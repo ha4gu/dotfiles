@@ -1,6 +1,4 @@
+bundler
 erb_lint
 foreman
-rubocop-rails
-rubocop-rspec
-standard
 
