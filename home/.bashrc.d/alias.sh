@@ -27,8 +27,8 @@ alias d='docker'
 alias dps='docker ps'
 
 # Docker Compose
-alias dc='docker-compose'
-alias fig='docker-compose'
+alias dc='docker compose'
+alias fig='docker compose'
 
 # Kubernetes
 alias k='kubectl'
