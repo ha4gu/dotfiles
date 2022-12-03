@@ -1,5 +1,7 @@
 # rbenv for Ruby
-if type rbenv > /dev/null 2>&1; then
+if [ -e ~/.rbenv/bin/rbenv ]; then
+  eval "$(~/.rbenv/bin/rbenv init - bash)"
+elif type rbenv > /dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
 
@@ -12,4 +14,3 @@ fi
 if type pyenv > /dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
-
