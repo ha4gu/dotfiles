@@ -28,6 +28,7 @@ alias dps='docker ps'
 
 # Docker Compose
 alias dc='docker compose'
+alias dcps='docker compose ps'
 alias fig='docker compose'
 
 # Kubernetes
