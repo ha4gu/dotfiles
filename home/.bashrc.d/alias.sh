@@ -58,9 +58,6 @@ alias l='ls -CF'                              #
 if [[ ${OSTYPE} = darwin* ]]; then
 	# BSD ls on macOS
 	alias ls='ls -hFG'
-elif [[ ${MSYSTEM} = MSYS ]]; then
-	# on MSYS for Windows
-	alias ls='ls --human-readable --file-type --color=always --ignore="NTUSER.DAT{*}.TM*"'
 else
 	alias ls='ls --human-readable --file-type --color=always'
 fi
