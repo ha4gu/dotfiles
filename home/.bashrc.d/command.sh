@@ -10,3 +10,8 @@ export LESS="-I -R -M -x2"
 [ -r "$HOME/.enhancd/init.sh" ] \
   && source "$HOME/.enhancd/init.sh"
 
+# gcloud CLI
+if [ $(uname -s) = "Darwin" ] \
+  && [ -r "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc" ]; then
+  source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc"
+fi
