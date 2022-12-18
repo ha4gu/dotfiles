@@ -11,11 +11,6 @@ elif [ -r /etc/bash_completion ]; then
   . /etc/bash_completion
 fi
 
-# gcloud
-if [ -r '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc' ]; then
-  source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
-fi
-
 # aws cli
 if type aws_completer > /dev/null 2>&1; then
   complete -C "$(which aws_completer)" aws
@@ -25,4 +20,3 @@ fi
 if type kubectl > /dev/null 2>&1; then
   source <(kubectl completion bash)
 fi
-
