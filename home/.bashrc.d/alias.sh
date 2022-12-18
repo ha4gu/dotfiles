@@ -11,17 +11,6 @@ alias push='git push'
 alias st='git status'
 alias allbranches='git -P branch -a'
 
-# locally installed Ruby on Rails
-alias r='bin/rails'
-alias rs='bin/rails server'
-alias rc='bin/rails console'
-alias rg='bin/rails generate'
-alias rr='bin/rails routes'
-
-# bundle command
-alias be='bundle exec'
-alias bi='bundle install'
-
 # Docker
 alias d='docker'
 alias dps='docker ps'
@@ -29,16 +18,12 @@ alias dps='docker ps'
 # Docker Compose
 alias dc='docker compose'
 alias dcps='docker compose ps'
-alias fig='docker compose'
 
 # Kubernetes
 alias k='kubectl'
 
 # brew
 alias brewcombo='brew cleanup && brew update && brew upgrade && brew upgrade --cask'
-
-# youtube-dl
-alias ydl='youtube-dl -f bestvideo+bestaudio --merge-output-format mkv'
 
 # Misc
 alias whence='type -a'                        # where, of a sort
