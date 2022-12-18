@@ -2,13 +2,15 @@
 export LESS="-I -R -M -x2"
 
 # homeshick
-[ -r "$HOME/.homesick/repos/homeshick/homeshick.sh" ] \
-  && source "$HOME/.homesick/repos/homeshick/homeshick.sh" \
-  && source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
+if [ -r "$HOME/.homesick/repos/homeshick/homeshick.sh" ]; then
+  source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+  source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
+fi
 
 # enhancd
-[ -r "$HOME/.enhancd/init.sh" ] \
-  && source "$HOME/.enhancd/init.sh"
+if [ -r "$HOME/.enhancd/init.sh" ]; then
+  source "$HOME/.enhancd/init.sh"
+fi
 
 # gcloud CLI
 if [ $(uname -s) = "Darwin" ] \
