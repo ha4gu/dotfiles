@@ -55,10 +55,9 @@ alias lll='ls -la'                            #
 alias la='ls -A'                              # all but . and ..
 alias l='ls -CF'                              #
 # Some shortcuts for different directory listings
-if [[ ${OSTYPE} = darwin* ]]; then
+if [ $(uname -s) = "Darwin" ]; then
 	# BSD ls on macOS
 	alias ls='ls -hFG'
 else
 	alias ls='ls --human-readable --file-type --color=always'
 fi
-
