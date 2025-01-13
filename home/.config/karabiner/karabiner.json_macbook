@@ -4,7 +4,7 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Change Command+Tab to Control+Tab",
+                        "description": "Command+TabをControl+Tabに変換する",
                         "manipulators": [
                             {
                                 "from": {
@@ -25,7 +25,7 @@
                         ]
                     },
                     {
-                        "description": "RDP以外でChange Control+Tab to Command+Tab",
+                        "description": "RDP以外でControl+TabをCommand+Tabに変換する",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -54,7 +54,7 @@
                         ]
                     },
                     {
-                        "description": "Ctrl+Command+Q（画面をロック）にOption+Lを割り当てる",
+                        "description": "Option+LをCtrl+Command+Q（画面をロック）に変換する",
                         "manipulators": [
                             {
                                 "from": {
@@ -72,7 +72,7 @@
                         ]
                     },
                     {
-                        "description": "F13にShift+Spaceを割り当てる（併せてmacOS側でF13を入力ソース切り替えに割り当てること）",
+                        "description": "Shift+SpaceをF13に変換する（併せてmacOS側でF13を入力ソース切り替えに割り当てること）",
                         "manipulators": [
                             {
                                 "from": {
@@ -85,7 +85,7 @@
                         ]
                     },
                     {
-                        "description": "RubyMineで、caps lockの位置のキーとshiftキー、Tabキーで前のタブへ移動する",
+                        "description": "RubyMineでcaps lockの位置のキーとshiftキー、Tabキーで前のタブへ移動する",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -111,7 +111,7 @@
                         ]
                     },
                     {
-                        "description": "RubyMineで、caps lockの位置のキーとTabキーで次のタブへ移動する",
+                        "description": "RubyMineでcaps lockの位置のキーとTabキーで次のタブへ移動する",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -137,14 +137,15 @@
                         ]
                     },
                     {
-                        "description": "Terminal.appやiTerm2で、Command-aをControl-aに変換する（tmuxプリフィックス）",
+                        "description": "ターミナルでCommand-aをControl-aに変換する（tmuxプリフィックス）",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$"
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -164,14 +165,15 @@
                         ]
                     },
                     {
-                        "description": "Terminal.appやiTerm2で、Command-bをControl-bに変換する（ページ戻し）",
+                        "description": "ターミナルでCommand-bをControl-bに変換する（ページ戻し）",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$"
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -191,14 +193,15 @@
                         ]
                     },
                     {
-                        "description": "Terminal.appやiTerm2で、Command-cをControl-cに変換する（キャンセル）",
+                        "description": "ターミナルでCommand-cをControl-cに変換する（キャンセル）",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$"
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -218,14 +221,15 @@
                         ]
                     },
                     {
-                        "description": "Terminal.appやiTerm2で、Command-dをControl-dに変換する（ログアウト）",
+                        "description": "ターミナルでCommand-dをControl-dに変換する（ログアウト）",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$"
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -245,14 +249,15 @@
                         ]
                     },
                     {
-                        "description": "Terminal.appやiTerm2で、Command-fをControl-fに変換する（ページ送り）",
+                        "description": "ターミナルでCommand-fをControl-fに変換する（ページ送り）",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$"
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -272,14 +277,15 @@
                         ]
                     },
                     {
-                        "description": "Terminal.appやiTerm2で、Command-lをControl-lに変換する（画面クリア）",
+                        "description": "ターミナルでCommand-lをControl-lに変換する（画面クリア）",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$"
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -299,14 +305,15 @@
                         ]
                     },
                     {
-                        "description": "Terminal.appやiTerm2で、Command-nをControl-nに変換する（履歴進む）",
+                        "description": "ターミナルでCommand-nをControl-nに変換する（履歴進む）",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$"
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -326,14 +333,15 @@
                         ]
                     },
                     {
-                        "description": "Terminal.appやiTerm2で、Command-pをControl-pに変換する（履歴戻る）",
+                        "description": "ターミナルでCommand-pをControl-pに変換する（履歴戻る）",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$"
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -353,14 +361,15 @@
                         ]
                     },
                     {
-                        "description": "Terminal.appやiTerm2で、Command-rをControl-rに変換する（bash履歴）",
+                        "description": "ターミナルでCommand-rをControl-rに変換する（bash履歴）",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$"
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -380,14 +389,15 @@
                         ]
                     },
                     {
-                        "description": "Terminal.appやiTerm2で、Command-zをControl-zに変換する（中断）",
+                        "description": "ターミナルでCommand-zをControl-zに変換する（中断）",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$"
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -581,7 +591,8 @@
                 }
             ],
             "name": "Default profile",
-            "selected": true
+            "selected": true,
+            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }
     ]
 }
