@@ -1,0 +1,24 @@
+### Ghostty https://ghostty.org/docs/config/reference
+
+# Color Theme
+theme = "Hybrid"
+
+# Font
+font-family = "migu 2m"
+font-size = 18
+
+# Background
+background-opacity = 0.8
+background-blur-radius = 4
+
+# Window
+window-padding-x = 16
+window-padding-y = 4
+window-padding-balance = true
+
+# Clipboard
+clipboard-read = allow
+clipboard-write = allow
+clipboard-trim-trailing-spaces = false
+clipboard-paste-protection = true
+clipboard-paste-bracketed-safe = true
