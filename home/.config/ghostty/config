@@ -22,3 +22,6 @@ clipboard-write = allow
 clipboard-trim-trailing-spaces = false
 clipboard-paste-protection = true
 clipboard-paste-bracketed-safe = true
+
+# Keybind
+keybind = global:command+shift+enter=toggle_visibility
