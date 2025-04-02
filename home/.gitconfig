@@ -9,6 +9,8 @@
 [alias]
     st = status
     sw = switch
+    unstage = restore --staged .
+    us = unstage
 
 [core]
     editor = vim
