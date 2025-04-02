@@ -34,7 +34,7 @@ alias egrep='egrep --color=always'            # show differences in colour
 alias fgrep='fgrep --color=always'            # show differences in colour
 alias view="vim -R"
 alias j="jobs -l"
-alias gh="cd ~/"                              # gh = Go Home
+alias gh="cd ~/"                              # gh = Go Home; GitHub CLIのコマンドと重複するため変更したい
 
 # ls
 alias ll='ls -la'                             # long list
