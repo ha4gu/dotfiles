@@ -9,7 +9,9 @@ alias mv='mv -i'
 alias pull='git pull'
 alias push='git push'
 alias st='git status'
+alias localbranches='git -P branch'
 alias allbranches='git -P branch -a'
+alias allstash='git add . && git status && git stash'
 
 # Docker
 alias d='docker'
