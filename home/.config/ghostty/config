@@ -1,7 +1,7 @@
 ### Ghostty https://ghostty.org/docs/config/reference
 
 # Color Theme
-theme = "Hybrid"
+theme = "Hybrid Next Plus"
 
 # Font
 font-family = "migu 2m"
