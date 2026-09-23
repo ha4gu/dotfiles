@@ -25,7 +25,11 @@ alias dcps='docker compose ps'
 alias k='kubectl'
 
 # brew
-alias brewcombo='brew cleanup && brew update && brew upgrade && brew upgrade --cask'
+alias brewcombo='brew cleanup && brew update && brew upgrade -y'
+
+# yt-dlp
+alias yt-dlp-mp3='yt-dlp -x --audio-format mp3'                    # https://sig9.org/blog/2023/05/02/
+alias yt-dlp-mp4='yt-dlp -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]"' # https://sig9.org/blog/2023/05/07/
 
 # Misc
 alias whence='type -a'                        # where, of a sort
